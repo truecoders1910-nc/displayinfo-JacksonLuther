@@ -13,6 +13,10 @@ namespace DisplayInfo
             Console.WriteLine($"Thanks {name}, what is your favorite number?");
             string favnum = Console.ReadLine();
             // Get their favorite animal
+            Console.WriteLine($"Also, what is your favorite animal?");
+            string favanimal = Console.ReadLine();
+            Console.WriteLine($"So {name}, your favorite number is {favnum} and your your favorite animal is {favanimal}");
+
 
 
             // Once you have gotten all their info and stored it,
