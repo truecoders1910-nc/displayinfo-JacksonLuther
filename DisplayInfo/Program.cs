@@ -12,12 +12,19 @@ namespace DisplayInfo
             // Get their favorite number
             Console.WriteLine($"Thanks {name}, what is your favorite number?");
             string favnum = Console.ReadLine();
+            if (Convert.ToInt32(favnum) > 10)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+            }
+            if (Convert.ToInt32(favnum) < 5)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+            }
             // Get their favorite animal
             Console.WriteLine($"Also, what is your favorite animal?");
             string favanimal = Console.ReadLine();
-            Console.WriteLine($"So {name}, your favorite number is {favnum} and your your favorite animal is {favanimal}");
-
-
+            Console.WriteLine($"So {name}, your favorite number is {favnum} and your favorite animal is a {favanimal}.");
+            
 
             // Once you have gotten all their info and stored it,
             // display it back to them.
